@@ -1,0 +1,72 @@
+Información tomada de https://apiodoc.readthedocs.io/en/stable/index.html
+
+ Requisitos:
+-Tener instalado Python3
+- GTKWave
+
+ Instalación de APIO
+python3 -m pip install -U apio
+
+ Instalación de paquetes de APIO
+apio install --all
+
+PARA INICIAR UN PROYECTO
+
+La carpeta del proyecto debe contener:
+-Archivos de verilog .v
+-Archivo .pcf (physical constrain file) [Para la tarjeta Alhambra ii, está el archivo pins.pcf] 
+-Archivos de test bench *_tb.v [Es un archivo de verilog que no será procesado en la síntesis. Solo se usa para la fase de simulación.] 
+-Archivos .gtkw [Simulación del tb en GTKWave. Solo se usa para la fase de simulación.] 
+
+Para verificar las boards soportadas por APIO
+$ apio boards --list
+Para iniciar un proyecto con la Alhambra ii
+$ apio init --board alhambra-ii
+
+DURANTE EL PROYECTO
+
+Verificación: Se revisa el código en verilog usando Icarus Verilog
+$ apio verify
+
+Simulación: Se simula el test bench usando Icarus Verilog y GTKWave
+$ apio sim
+
+Síntesis: Se hace síntesis del proyecto usando las herramientas Icestorm
+$ apio build
+
+Carga: Se carga el archivo bin a la tarjeta
+$ apio upload
+
+OTROS
+Uso de apio
+$ apio
+Usage: apio [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Project commands:
+  build      Synthesize the bitstream.
+  clean      Clean the previous generated files.
+  lint       Lint the verilog code.
+  sim        Launch the verilog simulation.
+  time       Bitstream timing analysis.
+  upload     Upload the bitstream to the FPGA.
+  verify     Verify the verilog code.
+
+Setup commands:
+  drivers    Manage FPGA boards drivers.
+  init       Manage apio projects.
+  install    Install packages.
+  uninstall  Uninstall packages.
+
+Utility commands:
+  boards     Manage FPGA boards.
+  config     Apio configuration.
+  examples   Manage verilog examples.
+  raw        Execute commands using Apio packages.
+  system     System tools.
+  upgrade    Check the latest Apio version.
+
+
