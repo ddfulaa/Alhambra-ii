@@ -1,0 +1,15 @@
+# #################################################################
+# Archivo de restricciones de la tarjeta Alhambra II
+# #################################################################
+#Entradas digitales
+set_io BOARD_SEG[0] 2
+set_io BOARD_SEG[1] 1
+set_io BOARD_SEG[2] 4
+set_io BOARD_SEG[3] 3
+set_io BOARD_SEG[4] 8
+set_io BOARD_SEG[5] 7
+set_io BOARD_SEG[6] 10
+set_io BOARD_SEG[7] 9
+#CLK de 12MHz
+set_io BOARD_CLK 49
+set_io BOARD_SW1 34

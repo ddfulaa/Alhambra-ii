@@ -1,0 +1,58 @@
+# #################################################################
+# Archivo de restricciones de la tarjeta Alhambra II
+# #################################################################
+#LEDs
+set_io BOARD_LED[0] 45
+set_io BOARD_LED[1] 44
+set_io BOARD_LED[2] 43
+set_io BOARD_LED[3] 42
+set_io BOARD_LED4 41
+set_io BOARD_LED5 39
+set_io BOARD_LED6 38
+set_io BOARD_LED7 37
+#Interruptores
+set_io BOARD_SW1 34
+set_io BOARD_SW2 33
+#Entradas análogas
+set_io BOARD_A0 114
+set_io BOARD_A1 115
+set_io BOARD_A2 116
+set_io BOARD_A3 117
+set_io BOARD_DD4 118
+set_io BOARD_DD5 119
+#Entradas digitales
+set_io BOARD_D0 2
+set_io BOARD_D1 1
+set_io BOARD_D2 4
+set_io BOARD_D3 3
+set_io BOARD_D4 8
+set_io BOARD_D5 7
+set_io BOARD_D6 10
+set_io BOARD_D7 9
+set_io BOARD_D8 20
+set_io BOARD_D9 19
+set_io BOARD_D10 22
+set_io BOARD_D11 21
+set_io BOARD_D12 63
+set_io BOARD_D13 64
+#CLK de 12MHz
+set_io BOARD_CLK 49
+#FTDI
+set_io FTDI_SCK 70
+set_io FTDI_MISO 68
+set_io FTDI_MOSI 67
+set_io FTDI_SS 71
+set_io FTDI_DONE 65
+set_io FTDI_RES 66
+set_io FTDI_RX 61
+set_io FTDI_TX 62
+set_io FTDI_RTS 60
+set_io FTDI_CTS 56
+set_io FTDI_DTR 52
+set_io FTDI_DSR 48
+set_io FTDI_DCD 47
+#ADC ADS7924
+set_io ADC_INT 90
+set_io ADC_SDA 83
+set_io ADC_SCL 84
+
